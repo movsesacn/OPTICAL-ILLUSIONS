@@ -12,7 +12,7 @@
         android:layout_height="1dp"
         android:layout_alignParentBottom="true"
         android:scaleType="fitXY"
-        android:src="@drawable/ellipse_blue_min" />
+        android:src="@drawable/ellipse_min" />
 
     <com.google.android.flexbox.FlexboxLayout
         android:id="@+id/flex"
@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/niramit_bold"
+                android:fontFamily="@font/meteoric_light"
                 android:text="@string/psychical"
                 android:textColor="@color/colorWithe"
                 android:textSize="@dimen/category_name_text_size" />
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/niramit_bold"
+                android:fontFamily="@font/meteoric_light"
                 android:text="@string/illusion"
                 android:textColor="@color/colorWithe"
                 android:textSize="@dimen/category_name_text_size" />
@@ -106,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/niramit_bold"
+                android:fontFamily="@font/meteoric_light"
                 android:text="@string/hypnosis"
                 android:textColor="@color/colorWithe"
                 android:textSize="@dimen/category_name_text_size" />

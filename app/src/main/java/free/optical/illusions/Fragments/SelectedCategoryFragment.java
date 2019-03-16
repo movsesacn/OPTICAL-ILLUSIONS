@@ -13,7 +13,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 import com.google.android.flexbox.FlexboxLayout;
 
@@ -85,11 +84,6 @@ public class SelectedCategoryFragment extends Fragment implements View.OnClickLi
 
                 mGifListView.getLayoutParams().height = (int) (mFlexLayout.getHeight() * 0.74);
 
-                if (Constants.isNavBarAvailable(getContext())) {
-                    resizeFlexLayout();
-                    resizeBackgroundView();
-                }
-
                 animateBackgroundView();
 
                 mFlexLayout.getViewTreeObserver().removeOnGlobalLayoutListener(this);
@@ -112,25 +106,12 @@ public class SelectedCategoryFragment extends Fragment implements View.OnClickLi
     }
 
     private void animateBackgroundView() {
-        final Animation animation = new SlideAnimation(mBackgroundView, 1, (int) (mFlexLayout.getHeight() * 0.97));
+        final Animation animation = new SlideAnimation(mBackgroundView, 1, (int) (mFlexLayout.getHeight() * 0.9));
 
         animation.setInterpolator(new AccelerateInterpolator());
         animation.setDuration(750);
         mBackgroundView.setAnimation(animation);
         mBackgroundView.startAnimation(animation);
-    }
-
-    private void resizeBackgroundView() {
-        final RelativeLayout.LayoutParams paramsImageView = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, mBackgroundView.getLayoutParams().height);
-        paramsImageView.setMargins(0,0,0, (Constants.getNavigationBarHeight(getContext()) + Constants.convertDpToPixel(30, getContext())));
-        paramsImageView.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-        mBackgroundView.setLayoutParams(paramsImageView);
-    }
-
-    private void resizeFlexLayout() {
-        final RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        params.setMargins(0,0,0, Constants.getNavigationBarHeight(getContext()));
-        mFlexLayout.setLayoutParams(params);
     }
 
     private void runAnimation() {

@@ -2,7 +2,6 @@ package free.optical.illusions.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -67,21 +66,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class GifHolder extends RecyclerView.ViewHolder {
 
         private final ImageView mGifView;
-        private final CardView mCardView;
 
         GifHolder(@NonNull View itemView) {
             super(itemView);
             mGifView = itemView.findViewById(R.id.gif_item_view);
-            mCardView = itemView.findViewById(R.id.gif_card_view);
 
             mGifView.requestLayout();
 
             mGifView.getLayoutParams().width = (int) (mFragment.getFlexLayoutHeight() * 0.132);
             mGifView.getLayoutParams().height = (int) (mFragment.getFlexLayoutHeight() * 0.132);
-
-            mCardView.setRadius((float) (mGifView.getLayoutParams().width / 2));
-
-
         }
     }
 }

@@ -9,10 +9,11 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        android:src="@drawable/ellipse_blue" />
+        android:scaleType="fitEnd"
+        android:src="@drawable/ellipse_splash" />
 
     <LinearLayout
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -42,7 +43,8 @@
         android:layout_height="@dimen/start_button_height"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="130dp"
+        android:layout_marginBottom="90dp"
+        android:textColor="@color/colorWithe"
         android:textAllCaps="false"
         android:background="@drawable/shape"
         android:text="@string/start"

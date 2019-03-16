@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/selected_category_background_view"
-        android:src="@drawable/ellipse_blue_large"
+        android:src="@drawable/ellipse_large"
         android:scaleType="fitXY"
         android:layout_marginBottom="@dimen/selected_category_background_view_margin_bottom"
         android:layout_alignParentBottom="true"
