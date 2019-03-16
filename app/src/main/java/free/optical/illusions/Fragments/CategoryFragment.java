@@ -58,7 +58,7 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
             public void onGlobalLayout() {
                 requestLayouts();
 
-                setSizesOfCategories((int) (mFlexLayout.getWidth() * 0.32));
+                setSizesOfCategories((int) (mFlexLayout.getWidth() * 0.3));
 
                 animateBackgroundView();
 
@@ -70,7 +70,7 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
     }
 
     private void animateBackgroundView() {
-        final Animation animation = new SlideAnimation(mBackgroundView, mBackgroundView.getLayoutParams().height, (int) (mFlexLayout.getHeight() * 0.54));
+        final Animation animation = new SlideAnimation(mBackgroundView, mBackgroundView.getLayoutParams().height, (int) (mFlexLayout.getHeight() * 0.52));
         animation.setInterpolator(new AccelerateInterpolator());
         animation.setDuration(650);
         mBackgroundView.setAnimation(animation);
