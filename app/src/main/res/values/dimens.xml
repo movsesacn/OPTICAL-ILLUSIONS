@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // Splash activity.
+    <dimen name="start_text_size">19sp</dimen>
+    <dimen name="splash_activity_flex_margin_top">56dp</dimen>
+    <dimen name="splash_activity_game_name">40sp</dimen>
+    <dimen name="start_button_width">250dp</dimen>
+    <dimen name="start_button_height">50dp</dimen>
+
+    // Full screen activity.
+    <dimen name="back_button_margin">10dp</dimen>
+
+    // Main activity.
+    <dimen name="activity_main_top_layout_height">80dp</dimen>
+    <dimen name="activity_main_top_layout_logo_margin">7dp</dimen>
+
+    // Category fragment.
+    <dimen name="category_name_text_size">15sp</dimen>
+
+    // Selected category.
+    <dimen name="selected_category_background_view_margin_bottom">30dp</dimen>
+    <dimen name="min_category_layout_margin">36dp</dimen>
+
+    <dimen name="gif_item_margin">4dp</dimen>
+    <dimen name="flex_box_layout_margin">20dp</dimen>
+
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Optical Illusions</string>
+
+    <string name="start">Start</string>
+    <string name="psychical">Psychical</string>
+    <string name="illusion">Illusion</string>
+    <string name="hypnosis">Hypnosis</string>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SelectedCategoryFragment">
+
+    <ImageView
+        android:id="@+id/selected_category_background_view"
+        android:src="@drawable/ellipse_blue_large"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="@dimen/selected_category_background_view_margin_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/selected_category_flex_container"
+        app:flexWrap="nowrap"
+        app:flexDirection="column"
+        app:justifyContent="flex_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/flex_box_layout_margin"
+        android:layout_marginEnd="@dimen/flex_box_layout_margin">
+
+        <free.optical.illusions.CustomView.GridRecyclerView
+            android:id="@+id/gif_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/category_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/min_category_layout_margin"
+            android:layout_marginEnd="@dimen/min_category_layout_margin">
+
+            <ImageView
+                android:id="@+id/psychical_logo_view"
+                android:layout_weight="1"
+                android:src="@drawable/psychical_logo_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/hypnosis_logo_view"
+                android:layout_weight="1"
+                android:src="@drawable/hypnosis_logo_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/illusion_logo_view"
+                android:layout_weight="1"
+                android:src="@drawable/illusion_logo_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</RelativeLayout>
